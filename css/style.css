@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'Ubunutu';
+    src: url('/font/Ubuntu-Regular.ttf');
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubunutu';
+}
+
+:root {
+    --light-gray: #E5E7EB;
+    --form-left-padding: 3rem;
+}
+
+.main-container {
+    display: flex;
+    background-color: ghostwhite;
+}
+
+.welcome-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo-img-container {
+    font-size: 4rem;
+    color: #FFFFFF;
+    padding: 10px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    ;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 15%;
+    width: 100%;
+}
+
+.credits-container {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.credits-container a {
+    color: var(--light-gray);
+    text-decoration: underline;
+}
+
+.welcome-img-container>img {
+    height: 100vh;
+    width: 80vh;
+}
+
+.logo-img-container>img {
+    height: auto;
+    width: 6rem;
+}
+
+.right-sidepanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-header {
+    width: min(750px, 70%);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: var(--form-left-padding);
+    margin-bottom: 6rem;
+}
+
+.form-container {
+    background-color: #FFFFFF;
+    padding-left: var(--form-left-padding);
+    flex: 1;
+    width: 100%;
+    max-height: 45%;
+}
+
+.form-content {
+    margin-top: 20px;
+    background-color: #FFFFFF;
+}
+
+.form-content>legend {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.form-column {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-row {
+    margin-right: 120px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+}
+
+label {
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1px;
+    color: rgb(70, 70, 70);
+}
+
+.form-row>input {
+    height: 2.4rem;
+    width: 20rem;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid var(--light-gray);
+}
+
+.sign-log-container {
+    margin-top: 40px;
+}
+
+.sign-log-btns {
+    display: flex;
+    padding-left: var(--form-left-padding);
+    margin-top: 2rem;
+}
+
+.sign-log-btns>p {
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+}
+
+#signUpBtn {
+    appearance: none;
+    width: 15rem;
+    height: 1rem;
+    border-radius: 15px;
+    border: 1px solid #b2b2b2;
+    box-sizing: border-box;
+    background-color: #ffc24e;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Ubunutu';
+    font-size: 19px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+#signUpBtn:disabled {
+    pointer-events: none;
+}
+
+#signUpBtn:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+#signUpBtn:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+#logInBtn {
+    appearance: none;
+    background-color: transparent;
+    color: #f9a915;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Ubunutu';
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+#logInBtn:disabled {
+    pointer-events: none;
+}
+
+#logInBtn:hover {
+    color: #f9a915;
+    border: transparent;
+    transform: translateY(-2px);
+}
+
+#logInBtn:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
