@@ -112,7 +112,6 @@ html {
 
 .form-column {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -132,12 +131,23 @@ label {
     color: rgb(70, 70, 70);
 }
 
-.form-row>input {
+.form-row > input {
     height: 2.4rem;
     width: 20rem;
     font-size: 20px;
     padding: 5px;
     border: 1px solid var(--light-gray);
+}
+
+.form-row > input:active {
+    outline: none !important;
+    border: 1px solid #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.form-row > input:focus {
+    outline: none !important;
+    border: 2px solid #719ECE;
 }
 
 .sign-log-container {
@@ -150,7 +160,7 @@ label {
     margin-top: 2rem;
 }
 
-.sign-log-btns>p {
+.sign-log-btns > p {
     margin-right: 0.5rem;
     font-size: 1.3rem;
 }
@@ -233,4 +243,17 @@ label {
 #logInBtn:active {
     box-shadow: none;
     transform: translateY(0);
+}
+
+#passwordReq {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.password-req-special::before {
+    content: '❌';
+}
+
+.password-req-special-check::before {
+    content: '✔️'
 }
