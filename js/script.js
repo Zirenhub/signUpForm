@@ -19,11 +19,8 @@ function changePasswordReqStatus() {
 }
 
 function check() {
-  if (confirmPassword.value === '' || password.value === '') {
-    if (confirmPassword.value === '' && password.value === '') {
-      passwordMessage.textContent = '';
-    }
-    return;
+  if (confirmPassword.value === '' && password.value === '') {
+    passwordMessage.textContent = '';
   } else {
     if (password.value === confirmPassword.value) {
       passwordMessage.style.color = 'green';
