@@ -51,12 +51,12 @@
                             </div>
                             <div class="form-row">
                                 <label for="password">PASSWORD</label>
-                                <input id="password" name="password" type="password" onkeyup='check();' onclick="passwordReqDesc();" oninput="changePasswordReqStatus()">
+                                <input id="password" name="password" type="password" oninput='check(),changePasswordReqStatus();' onclick="passwordReqDesc();">
                                 <span id="passwordReq"></span>
                             </div>
                             <div class="form-row">
                                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                                <input id="confirm-password" name="confirm-password" type="password" onkeyup='check();' onclick="passwordReqDesc();" oninput="changePasswordReqStatus()">
+                                <input id="confirm-password" name="confirm-password" type="password" oninput='check(),changePasswordReqStatus();' onclick="passwordReqDesc();">
                                 <span id='message'></span>
                             </div>
                         </div>
